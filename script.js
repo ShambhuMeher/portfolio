@@ -213,3 +213,20 @@ document.querySelectorAll('.project, .skill-card').forEach(card => {
   });
   card.addEventListener('mouseleave', () => { card.style.transform = ''; });
 });
+
+/* ============ TIME-OF-DAY THEME ============ */
+// hours are 24-hour (0–23). getHours() returns local hour in 24h regardless of OS display format.
+function themeForHour(h) {
+  if (h >= 5  && h < 12) return 'morning';   // 05:00 – 11:59
+  if (h >= 12 && h < 16) return 'afternoon'; // 12:00 – 15:59
+  if (h >= 16 && h < 20) return 'evening';   // 16:00 – 19:59
+  return 'night';                            // 20:00 – 04:59
+}
+function applyTimeTheme() {
+  const theme = themeForHour(new Date().getHours());
+  document.documentElement.setAttribute('data-theme', theme);
+  const label = document.getElementById('theme-label');
+  if (label) label.textContent = theme;
+}
+applyTimeTheme();
+setInterval(applyTimeTheme, 60 * 1000);
