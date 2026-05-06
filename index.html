@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shambhu Meher — Frontend Developer</title>
+  <meta name="description" content="Shambhu Meher — Frontend Developer with 3+ years of experience in React.js, JavaScript, and modern web technologies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background -->
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-text">
+      <span>S</span><span>H</span><span>A</span><span>M</span><span>B</span><span>H</span><span>U</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="logo">
+      <span class="logo-mark">SM</span>
+      <span class="logo-text">Shambhu<span>.</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span> Available for new opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="line">Hi, I'm <span class="gradient-text">Shambhu</span></span>
+        <span class="line">A <span class="typed" id="typed"></span><span class="caret">|</span></span>
+      </h1>
+      <p class="hero-subtitle">
+        Frontend Developer with <strong>3+ years</strong> crafting scalable, responsive web applications using React.js, JavaScript &amp; modern web tech. Delivered 5+ production apps across healthcare, education &amp; logistics.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Let's Talk</span>
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:shambhumeher2000@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+919348942380" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="profile-card">
+        <div class="profile-glow"></div>
+        <div class="profile-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-inner">SM</div>
+        </div>
+        <div class="profile-meta">
+          <div class="status"><span class="dot"></span> Online · Bhubaneswar, IN</div>
+          <h3>Shambhu Meher</h3>
+          <p>Frontend Developer @ Ohhpro</p>
+        </div>
+        <div class="profile-stack">
+          <span>React</span><span>JS</span><span>Tailwind</span><span>Firebase</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>React.js</span><span>★</span>
+      <span>JavaScript</span><span>★</span>
+      <span>TypeScript</span><span>★</span>
+      <span>Tailwind CSS</span><span>★</span>
+      <span>Firebase</span><span>★</span>
+      <span>WebSocket</span><span>★</span>
+      <span>REST APIs</span><span>★</span>
+      <span>D3.js</span><span>★</span>
+      <span>JWT / OAuth</span><span>★</span>
+      <span>Agile</span><span>★</span>
+      <!-- duplicate -->
+      <span>React.js</span><span>★</span>
+      <span>JavaScript</span><span>★</span>
+      <span>TypeScript</span><span>★</span>
+      <span>Tailwind CSS</span><span>★</span>
+      <span>Firebase</span><span>★</span>
+      <span>WebSocket</span><span>★</span>
+      <span>REST APIs</span><span>★</span>
+      <span>D3.js</span><span>★</span>
+      <span>JWT / OAuth</span><span>★</span>
+      <span>Agile</span><span>★</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="eyebrow">01 — About</span>
+      <h2 class="section-title">Crafting digital experiences <br/>that <span class="gradient-text">people love</span>.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm <strong>Shambhu Meher</strong>, a frontend developer based in Bhubaneswar, India. Over the last 3+ years I've shipped 5+ production-grade web apps across <em>healthcare, education, transportation</em> and community platforms.
+        </p>
+        <p>
+          I love turning complex problems into clean, intuitive interfaces — with a focus on performance, accessibility and pixel-perfect design. Comfortable across the full frontend stack: React, hooks, context, real-time sockets, secure auth, and modern CSS.
+        </p>
+        <div class="stats">
+          <div class="stat"><h3 data-count="3">0</h3><p>Years<br/>Experience</p></div>
+          <div class="stat"><h3 data-count="5">0</h3><p>Production<br/>Apps</p></div>
+          <div class="stat"><h3 data-count="20">0</h3><p>Tech<br/>Stacks</p></div>
+          <div class="stat"><h3 data-count="100">0</h3><p>Commitment<br/>%</p></div>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <div class="card-header">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <span class="file">about.js</span>
+        </div>
+<pre class="code"><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">'Shambhu Meher'</span>,
+  <span class="c-prop">role</span>: <span class="c-str">'Frontend Developer'</span>,
+  <span class="c-prop">experience</span>: <span class="c-str">'3+ years'</span>,
+  <span class="c-prop">location</span>: <span class="c-str">'Bhubaneswar, IN'</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">'React'</span>, <span class="c-str">'JS'</span>, <span class="c-str">'Tailwind'</span>],
+  <span class="c-prop">passions</span>: [<span class="c-str">'UI/UX'</span>, <span class="c-str">'Performance'</span>],
+  <span class="c-prop">currentlyLearning</span>: <span class="c-str">'Next.js, AI APIs'</span>,
+  <span class="c-prop">openToWork</span>: <span class="c-bool">true</span>,
+};</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-head">
+      <span class="eyebrow">02 — Skills</span>
+      <h2 class="section-title">My <span class="gradient-text">toolkit</span> for building the web.</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+        <h3>Frontend</h3>
+        <p>React.js, Hooks, Context API, React Router, Component Architecture</p>
+        <div class="skill-tags"><span>React</span><span>Hooks</span><span>Context</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+        <h3>Languages</h3>
+        <p>JavaScript (ES6+), HTML5, CSS3, JSON data modeling</p>
+        <div class="skill-tags"><span>JS</span><span>HTML5</span><span>CSS3</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+        <h3>Styling</h3>
+        <p>Tailwind CSS, Bootstrap, Responsive Design, Cross-browser compatibility</p>
+        <div class="skill-tags"><span>Tailwind</span><span>Bootstrap</span><span>SCSS</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Real-time</h3>
+        <p>WebSocket, Socket.io, Live Chat, Push Notifications</p>
+        <div class="skill-tags"><span>Socket.io</span><span>WebSocket</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Auth & Security</h3>
+        <p>Google OAuth, Firebase Auth, JWT, Session Management</p>
+        <div class="skill-tags"><span>OAuth</span><span>JWT</span><span>Firebase</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Backend / APIs</h3>
+        <p>RESTful APIs, Firebase (Auth, FCM), API Integration</p>
+        <div class="skill-tags"><span>REST</span><span>Firebase</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+        <h3>Version Control</h3>
+        <p>GitHub, Bitbucket, Git workflows, Code reviews</p>
+        <div class="skill-tags"><span>Git</span><span>GitHub</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-rocket"></i></div>
+        <h3>Practices</h3>
+        <p>Agile/Scrum, Unit Testing, Performance Optimization, PWA</p>
+        <div class="skill-tags"><span>Agile</span><span>PWA</span><span>Testing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-head">
+      <span class="eyebrow">03 — Projects</span>
+      <h2 class="section-title">Selected <span class="gradient-text">work</span> &amp; case studies.</h2>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="healthcare">Healthcare</button>
+      <button class="filter" data-filter="education">Education</button>
+      <button class="filter" data-filter="logistics">Logistics</button>
+      <button class="filter" data-filter="ai">AI</button>
+      <button class="filter" data-filter="community">Community</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project" data-cat="healthcare">
+        <div class="project-img">
+          <div class="img-grad img-1"></div>
+          <span class="proj-tag">Healthcare</span>
+        </div>
+        <div class="project-body">
+          <h3>NuHealthMantra</h3>
+          <p>Multi-role healthcare platform supporting Admin, Doctors, Nutritionists & Fitness experts with real-time chat and appointments.</p>
+          <div class="project-stack"><span>React</span><span>Firebase</span><span>WebSocket</span><span>JWT</span></div>
+          <a href="https://nuhealthmantra.com" target="_blank" class="project-link">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+
+      <article class="project" data-cat="education">
+        <div class="project-img">
+          <div class="img-grad img-2"></div>
+          <span class="proj-tag">Education</span>
+        </div>
+        <div class="project-body">
+          <h3>Carrmos</h3>
+          <p>Educational guidance platform with 5+ modules and interactive 3D visualizations using D3.js for course roadmaps.</p>
+          <div class="project-stack"><span>React</span><span>D3.js</span><span>Context</span><span>OAuth</span></div>
+          <a href="https://carrmos.com" target="_blank" class="project-link">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+
+      <article class="project" data-cat="logistics">
+        <div class="project-img">
+          <div class="img-grad img-3"></div>
+          <span class="proj-tag">Logistics</span>
+        </div>
+        <div class="project-body">
+          <h3>Matrix Logistics</h3>
+          <p>Comprehensive transportation & logistics services website with freight, warehousing & supply-chain modules.</p>
+          <div class="project-stack"><span>React</span><span>Tailwind</span><span>REST</span></div>
+          <a href="https://matrixlogistics.org" target="_blank" class="project-link">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+
+      <article class="project" data-cat="community">
+        <div class="project-img">
+          <div class="img-grad img-4"></div>
+          <span class="proj-tag">Community</span>
+        </div>
+        <div class="project-body">
+          <h3>Ohhpro Junction</h3>
+          <p>No.1 Society Management App with visitor management, billing, and real-time community notifications.</p>
+          <div class="project-stack"><span>React</span><span>Firebase</span><span>FCM</span><span>Tailwind</span></div>
+          <a href="https://ohhpro.com" target="_blank" class="project-link">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+
+      <article class="project" data-cat="ai">
+        <div class="project-img">
+          <div class="img-grad img-5"></div>
+          <span class="proj-tag">AI · Personal</span>
+        </div>
+        <div class="project-body">
+          <h3>AIToolVibe</h3>
+          <p>AI-powered platform with blog generation, thumbnail creation & face-swap, integrating multiple AI providers.</p>
+          <div class="project-stack"><span>React</span><span>AI APIs</span><span>Tailwind</span></div>
+          <a href="https://aitoolvibe.com" target="_blank" class="project-link">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+
+      <article class="project" data-cat="education">
+        <div class="project-img">
+          <div class="img-grad img-6"></div>
+          <span class="proj-tag">Open Source</span>
+        </div>
+        <div class="project-body">
+          <h3>UI Component Library</h3>
+          <p>Reusable React component library with dark-mode support, theming and full TypeScript types.</p>
+          <div class="project-stack"><span>React</span><span>TS</span><span>Storybook</span></div>
+          <a href="#" class="project-link">Coming Soon <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+
+      <article class="project coming-soon" data-cat="community">
+        <div class="project-img">
+          <div class="img-grad img-1"></div>
+          <span class="proj-tag">Community</span>
+          <span class="soon-badge"><i class="fa-solid fa-clock"></i> Coming Soon</span>
+        </div>
+        <div class="project-body">
+          <h3>SocietyConnect.ai</h3>
+          <p>AI-powered society management web app — resident portal with smart visitor tracking, payments, complaints &amp; community feed.</p>
+          <div class="project-stack"><span>React</span><span>AI</span><span>Tailwind</span><span>Firebase</span></div>
+          <a href="https://societyconnect.ai" target="_blank" class="project-link">societyconnect.ai <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+
+      <article class="project coming-soon" data-cat="community">
+        <div class="project-img">
+          <div class="img-grad img-4"></div>
+          <span class="proj-tag">Admin Dashboard</span>
+          <span class="soon-badge"><i class="fa-solid fa-clock"></i> Coming Soon</span>
+        </div>
+        <div class="project-body">
+          <h3>Admin · SocietyConnect.ai</h3>
+          <p>Admin control panel for SocietyConnect — manage societies, residents, billing, analytics &amp; role-based access from one dashboard.</p>
+          <div class="project-stack"><span>React</span><span>Charts</span><span>RBAC</span><span>REST</span></div>
+          <a href="https://admin.societyconnect.ai" target="_blank" class="project-link">admin.societyconnect.ai <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section class="section" id="experience">
+    <div class="section-head">
+      <span class="eyebrow">04 — Experience</span>
+      <h2 class="section-title">My <span class="gradient-text">journey</span> so far.</h2>
+    </div>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-content">
+          <span class="t-date">Oct 2023 — Present</span>
+          <h3>Frontend Developer · <span>Ohhpro Technologies</span></h3>
+          <p>Building scalable React apps, integrating REST APIs, designing reusable UI with Tailwind/Bootstrap, leading multi-module routing systems and contributing to agile ceremonies.</p>
+        </div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-content">
+          <span class="t-date">Apr 2018 — May 2022</span>
+          <h3>B-Tech, EEE · <span>Biju Pattnayak University</span></h3>
+          <p>Graduated with SGPA 8.2. Self-taught web development alongside studies and built personal projects to break into the frontend industry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="contact-card">
+      <div class="contact-left">
+        <span class="eyebrow">05 — Contact</span>
+        <h2 class="section-title">Let's build <br/>something <span class="gradient-text">amazing</span>.</h2>
+        <p>Open to frontend roles, freelance projects and exciting collaborations. Drop a message — I reply within 24 hours.</p>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-envelope"></i> shambhumeher2000@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +91 9348942380</li>
+          <li><i class="fa-solid fa-location-dot"></i> Bhubaneswar, India</li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" name="name" required placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" name="email" required placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full">
+          <span>Send Message</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CV DOWNLOAD -->
+  <section class="cv-section">
+    <div class="cv-card">
+      <div class="cv-glow"></div>
+      <div class="cv-left">
+        <div class="cv-icon"><i class="fa-solid fa-file-lines"></i></div>
+        <div>
+          <span class="eyebrow">Resume</span>
+          <h3>Grab a copy of my CV</h3>
+          <p>Full experience, projects &amp; tech stack — packed into a single PDF.</p>
+        </div>
+      </div>
+      <a href="shambhu_cv.pdf" download="Shambhu_Meher_CV.pdf" class="btn btn-primary cv-btn">
+        <i class="fa-solid fa-download"></i>
+        <span>Download CV</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Shambhu Meher. Crafted with <i class="fa-solid fa-heart"></i> in Bhubaneswar.</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:shambhumeher2000@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
